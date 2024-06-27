@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Birthday - Personal Use;
+    src: url(fontes/Birthday\ -\ Personal\ Use.otf) format(opentype);
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte2);
+}
+
+:root {
+    /* Fonte */
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Birthday - Personal Use', cursive;
+    --fonte3: Arial, Helvetica, sans-serif;
+
+    /* Cores */
+    --cor01: #FFD700;
+    --cor02: #87CEEB;
+    --cor03: #FFB6C1;
+}
+
+body {
+    background-image: linear-gradient(to top, var(--cor03), var(--cor02), var(--cor01));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+header > h1{
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+}
+
+header > p{
+    display: block;
+    text-align: center;
+    font-size: 11.5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+main h2 {
+    color: black;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+main p {
+    color: black;
+    font-size: 0.9em;
+    text-align: center;
+    padding-bottom: 17px;
+}
+
+section#login {
+    background-color: white;
+    width: 350px;
+    height: 580px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#login > div#imagem {
+    background: url(../estilos/imagens/10.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+form > div.campo {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+section .link {
+    display: block;
+    background-color: #87CEEB;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
