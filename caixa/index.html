@@ -25,10 +25,10 @@
         // Função para mostrar a caixa de pergunta inicial
         function mostrarPergunta() {
             Swal.fire({
-                title: 'Você gosta de JS?',
+                title: 'Peitinho?🤗',
                 showDenyButton: true,
-                confirmButtonText: `Sim`,
-                denyButtonText: `Não`
+                confirmButtonText: `Claro gatinho`,
+                denyButtonText: `Não.`
             }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire('Que bom!', '', 'success').then(() => {
@@ -36,12 +36,10 @@
                     });
                 } else if (result.isDenied) {
                     Swal.fire({
-                        title: 'Por que não?',
-                        input: 'text',
-                        inputPlaceholder: 'Digite o motivo',
+                        title: 'Por que não?🤕',
                         showCancelButton: true,
-                        confirmButtonText: 'Enviar',
-                        cancelButtonText: 'Cancelar'
+                        confirmButtonText: 'Mudei de ideia, vou mandar',
+                        cancelButtonText: 'Vou mandar sim, to brincando'
                     }).then((reason) => {
                         if (reason.isConfirmed) {
                             Swal.fire(`Motivo: ${reason.value}`, '', 'info').then(() => {
