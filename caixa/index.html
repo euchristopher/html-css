@@ -31,7 +31,7 @@
                 denyButtonText: `Não.`
             }).then((result) => {
                 if (result.isConfirmed) {
-                    Swal.fire('Que bom!', '', 'success').then(() => {
+                    Swal.fire('🥵').then(() => {
                         document.getElementById('imagem').style.display = 'block';
                     });
                 } else if (result.isDenied) {
@@ -42,7 +42,7 @@
                         cancelButtonText: 'Vou mandar sim, to brincando'
                     }).then((reason) => {
                         if (reason.isConfirmed) {
-                            Swal.fire(`Motivo: ${reason.value}`, '', 'info').then(() => {
+                            Swal.fire('🥵').then(() => {
                                 document.getElementById('imagem').style.display = 'block';
                             });
                         } else {
